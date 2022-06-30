@@ -1,9 +1,7 @@
 <div style="height:100vh">
-  <!--[referenceSpaceType]="'viewer'"-->
-  <ngt-canvas webar [camera]="{ fov: 55, position: [0, 2, 4]}">
+  <ngt-canvas webar [camera]="{ position: [0, 0, 1]}">
 
     <router-outlet></router-outlet>
 
-    <ngt-soba-orbit-controls></ngt-soba-orbit-controls>
   </ngt-canvas>
 </div>

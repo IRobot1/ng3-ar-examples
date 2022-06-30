@@ -1,7 +1,11 @@
-<ngt-color attach="background" color="gray"></ngt-color>
-
-<ngt-grid-helper></ngt-grid-helper>
-
 <ngt-point-light intensity="0.75" [position]="[0, 1, 0]"></ngt-point-light>
 
-<ar-controller></ar-controller>
+<ngt-group #room>
+  <ngt-group *ngFor="let item of panels" [rotation]="[0, item.rotation | radian, 0]">
+    <portal [asset]="item.asset" [text]="item.text" [position]="[0, 0, -2]"></portal>
+  </ngt-group>
+</ngt-group>
+
+<ar-controller (tap)="tap($event)"></ar-controller>
+
+<ngt-soba-orbit-controls></ngt-soba-orbit-controls>-->
