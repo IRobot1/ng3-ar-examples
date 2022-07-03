@@ -10,10 +10,11 @@ import { NgtCanvasModule, NgtRadianPipeModule } from '@angular-three/core';
 
 import { NgtMeshModule } from '@angular-three/core/meshes';
 import { NgtGroupModule } from '@angular-three/core/group';
-import { NgtPlaneGeometryModule, NgtCylinderGeometryModule } from '@angular-three/core/geometries';
+import { NgtPlaneGeometryModule, NgtCylinderGeometryModule, NgtBoxGeometryModule, NgtConeGeometryModule, NgtIcosahedronGeometryModule, NgtTorusGeometryModule } from '@angular-three/core/geometries';
 import { NgtMeshStandardMaterialModule } from '@angular-three/core/materials';
 
 import { NgtColorAttributeModule } from '@angular-three/core/attributes';
+import { NgtAxesHelperModule} from '@angular-three/core/helpers';
 
 
 import { NgtPointLightModule } from '@angular-three/core/lights';
@@ -26,6 +27,8 @@ import { Ng3WebxrModule } from 'ng3-webxr';
 import { PanelComponent } from './home/panel/panel.component';
 import { PortalComponent } from './home/portal/portal.component';
 import { ConesExample } from '../examples/cones/cones.component';
+import { DraggingExample } from '../examples/dragging/dragging.component';
+import { DragDirective } from '../examples/dragging/drag.directive';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { ConesExample } from '../examples/cones/cones.component';
     PortalComponent,
 
     ConesExample,
+    DraggingExample,
+    DragDirective,
   ],
   imports: [
     BrowserModule,
@@ -44,11 +49,16 @@ import { ConesExample } from '../examples/cones/cones.component';
     NgtRadianPipeModule,
     NgtColorAttributeModule,
 
+    
     NgtMeshModule,
     NgtGroupModule,
 
     NgtPlaneGeometryModule,
     NgtCylinderGeometryModule,
+    NgtBoxGeometryModule,
+    NgtConeGeometryModule,
+    NgtIcosahedronGeometryModule,
+    NgtTorusGeometryModule,
 
     NgtMeshStandardMaterialModule,
 
@@ -56,6 +66,8 @@ import { ConesExample } from '../examples/cones/cones.component';
 
     NgtSobaOrbitControlsModule,
     NgtSobaTextModule,
+
+    NgtAxesHelperModule,
 
     Ng3WebxrModule,
   ],
