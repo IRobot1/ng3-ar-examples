@@ -10,7 +10,7 @@ import { NgtCanvasModule, NgtRadianPipeModule } from '@angular-three/core';
 
 import { NgtMeshModule } from '@angular-three/core/meshes';
 import { NgtGroupModule } from '@angular-three/core/group';
-import { NgtPlaneGeometryModule, NgtCylinderGeometryModule, NgtBoxGeometryModule, NgtConeGeometryModule, NgtIcosahedronGeometryModule, NgtTorusGeometryModule } from '@angular-three/core/geometries';
+import { NgtPlaneGeometryModule, NgtCylinderGeometryModule, NgtBoxGeometryModule, NgtConeGeometryModule, NgtIcosahedronGeometryModule, NgtTorusGeometryModule, NgtRingGeometryModule } from '@angular-three/core/geometries';
 import { NgtMeshStandardMaterialModule } from '@angular-three/core/materials';
 
 import { NgtColorAttributeModule } from '@angular-three/core/attributes';
@@ -31,6 +31,7 @@ import { DraggingExample } from '../examples/dragging/dragging.component';
 import { DragDirective } from '../examples/dragging/drag.directive';
 import { GesturesExample } from '../examples/gestures/gestures.component';
 import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanish.component';
+import { HittestExample } from '../examples/hittest/hittest.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanis
     DragDirective,
     GesturesExample,
     TextVanishComponent,
+    HittestExample,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +65,7 @@ import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanis
     NgtConeGeometryModule,
     NgtIcosahedronGeometryModule,
     NgtTorusGeometryModule,
+    NgtRingGeometryModule,
 
     NgtMeshStandardMaterialModule,
 

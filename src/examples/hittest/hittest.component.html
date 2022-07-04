@@ -1,0 +1,11 @@
+<ngt-point-light intensity="0.75"></ngt-point-light>
+
+<ngt-mesh (ready)="reticle = $event" (beforeRender)="tick($event.state)" [position]="[0, 0.1, 0]" [rotation]="[0 | radian, 0, 0]">
+  <ngt-ring-geometry [args]="[0.15, 0.2, 32]" ></ngt-ring-geometry>
+</ngt-mesh>
+
+<ngt-mesh *ngFor="let item of hits"  [position]="item.position" [rotation]="item.rotation" [scale]="item.scale">
+  <ngt-cylinder-geometry [args]="[0.1, 0.1, 0.2, 32]" [translate]="[0, 0.1, 0]"></ngt-cylinder-geometry>
+</ngt-mesh>
+
+<ar-controller (tap)="tap()"></ar-controller>
