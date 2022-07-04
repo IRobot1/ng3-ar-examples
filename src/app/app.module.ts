@@ -29,6 +29,8 @@ import { PortalComponent } from './home/portal/portal.component';
 import { ConesExample } from '../examples/cones/cones.component';
 import { DraggingExample } from '../examples/dragging/dragging.component';
 import { DragDirective } from '../examples/dragging/drag.directive';
+import { GesturesExample } from '../examples/gestures/gestures.component';
+import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanish.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { DragDirective } from '../examples/dragging/drag.directive';
     ConesExample,
     DraggingExample,
     DragDirective,
+    GesturesExample,
+    TextVanishComponent,
   ],
   imports: [
     BrowserModule,

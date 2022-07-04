@@ -1,0 +1,14 @@
+<ngt-point-light intensity="0.75"></ngt-point-light>
+
+
+<ar-gestures (press)="press($event)"
+             (tap)="tap($event)"
+             (swipe)="swipe($event)"
+             (pinch)="pinch($event)"
+             (rotate)="rotate($event)"
+             (pan)="pan($event)">
+</ar-gestures>
+
+<ngt-group *ngFor="let item of messages" [position]="item.position" [rotation]="item.rotation">
+  <text-vanish [text]="item.message" (completed)="clearmessage()"></text-vanish>
+</ngt-group>
