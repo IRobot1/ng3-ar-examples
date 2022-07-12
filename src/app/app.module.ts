@@ -33,6 +33,7 @@ import { GesturesExample } from '../examples/gestures/gestures.component';
 import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanish.component';
 import { HittestExample } from '../examples/hittest/hittest.component';
 import { LightingExample } from '../examples/lighting/lighting.component';
+import { PaintExample } from '../examples/paint/paint.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,8 @@ import { LightingExample } from '../examples/lighting/lighting.component';
     HittestExample,
 
     LightingExample,
+
+    PaintExample,
   ],
   imports: [
     BrowserModule,

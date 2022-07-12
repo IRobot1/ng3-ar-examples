@@ -18,6 +18,7 @@ export class HomeComponent {
     { asset: 'dragging', text: 'Dragging' },
     { asset: 'hittest', text: 'Hit Test' },
     { asset: 'lighting', text: 'Lighting Estimation' },
+    { asset: 'paint', text: 'Paint' },
   ]
 
   panels: Array<PanelSetting> = [];
