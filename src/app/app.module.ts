@@ -10,14 +10,14 @@ import { NgtCanvasModule, NgtRadianPipeModule } from '@angular-three/core';
 
 import { NgtMeshModule } from '@angular-three/core/meshes';
 import { NgtGroupModule } from '@angular-three/core/group';
-import { NgtPlaneGeometryModule, NgtCylinderGeometryModule, NgtBoxGeometryModule, NgtConeGeometryModule, NgtIcosahedronGeometryModule, NgtTorusGeometryModule, NgtRingGeometryModule } from '@angular-three/core/geometries';
+import { NgtPlaneGeometryModule, NgtCylinderGeometryModule, NgtBoxGeometryModule, NgtConeGeometryModule, NgtIcosahedronGeometryModule, NgtTorusGeometryModule, NgtRingGeometryModule, NgtSphereGeometryModule } from '@angular-three/core/geometries';
 import { NgtMeshStandardMaterialModule } from '@angular-three/core/materials';
 
 import { NgtColorAttributeModule } from '@angular-three/core/attributes';
 import { NgtAxesHelperModule} from '@angular-three/core/helpers';
 
 
-import { NgtPointLightModule } from '@angular-three/core/lights';
+import { NgtPointLightModule,NgtHemisphereLightModule } from '@angular-three/core/lights';
 
 import { NgtSobaOrbitControlsModule } from '@angular-three/soba/controls';
 import { NgtSobaTextModule } from '@angular-three/soba/abstractions'
@@ -32,6 +32,7 @@ import { DragDirective } from '../examples/dragging/drag.directive';
 import { GesturesExample } from '../examples/gestures/gestures.component';
 import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanish.component';
 import { HittestExample } from '../examples/hittest/hittest.component';
+import { LightingExample } from '../examples/lighting/lighting.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,10 @@ import { HittestExample } from '../examples/hittest/hittest.component';
     DragDirective,
     GesturesExample,
     TextVanishComponent,
+
     HittestExample,
+
+    LightingExample,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +66,7 @@ import { HittestExample } from '../examples/hittest/hittest.component';
     NgtPlaneGeometryModule,
     NgtCylinderGeometryModule,
     NgtBoxGeometryModule,
+    NgtSphereGeometryModule,
     NgtConeGeometryModule,
     NgtIcosahedronGeometryModule,
     NgtTorusGeometryModule,
@@ -70,6 +75,7 @@ import { HittestExample } from '../examples/hittest/hittest.component';
     NgtMeshStandardMaterialModule,
 
     NgtPointLightModule,
+    NgtHemisphereLightModule,
 
     NgtSobaOrbitControlsModule,
     NgtSobaTextModule,

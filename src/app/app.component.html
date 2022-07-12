@@ -1,5 +1,5 @@
 <div style="height:100vh">
-  <ngt-canvas webar [sessionInit]="{ optionalFeatures: [ 'hit-test' ] }" [camera]="{ position: [0, 0, 1]}">
+  <ngt-canvas webar [sessionInit]="{ optionalFeatures: ['hit-test', 'light-estimation'] }" [camera]="{ fov:55, position: [0, 0, 1]}">
 
     <router-outlet></router-outlet>
 

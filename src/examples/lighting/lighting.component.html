@@ -1,0 +1,10 @@
+<ngt-hemisphere-light [visible]="visible" [args]="['white', '#bbbbff', 1]" [position]="[0.5, 1, 0.25]"></ngt-hemisphere-light>
+
+<ngt-group (ready)="ballGroup=$event" [position]="[0, 0, -2]">
+  <ngt-mesh *ngFor="let item of balls" [position]="item.position">
+    <ngt-sphere-geometry [args]="[0.175, 32, 32]"></ngt-sphere-geometry>
+    <ngt-mesh-standard-material color="#dddddd" [roughness]="item.roughness" [metalness]="item.metalness"></ngt-mesh-standard-material>
+  </ngt-mesh>
+</ngt-group>
+
+<ar-gestures (tap)="tap($event)"></ar-gestures>

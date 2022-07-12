@@ -7,6 +7,7 @@ import { ConesExample } from '../examples/cones/cones.component';
 import { DraggingExample } from '../examples/dragging/dragging.component';
 import { GesturesExample } from '../examples/gestures/gestures.component';
 import { HittestExample } from '../examples/hittest/hittest.component';
+import { LightingExample } from '../examples/lighting/lighting.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'dragging', component: DraggingExample },
   { path: 'gestures', component: GesturesExample },
   { path: 'hittest', component: HittestExample },
+  { path: 'lighting', component: LightingExample },
 ];
 
 @NgModule({

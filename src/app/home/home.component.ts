@@ -17,6 +17,7 @@ export class HomeComponent {
     { asset: 'cones', text: 'Cones' },
     { asset: 'dragging', text: 'Dragging' },
     { asset: 'hittest', text: 'Hit Test' },
+    { asset: 'lighting', text: 'Lighting Estimation' },
   ]
 
   panels: Array<PanelSetting> = [];
@@ -25,11 +26,11 @@ export class HomeComponent {
     private webar: WebARService,
     private store: NgtStore,
   ) {
-    const angle = 120 / this.examples.length;
+    const angle = 180 / this.examples.length;
 
     this.examples.forEach((item, index) => {
       const position = [0, 0, 0] as NgtTriple;
-      const rotation = angle * index - 45;
+      const rotation = angle * index - 75;
 
       const panel = new PanelSetting(position, rotation, item.asset, item.text)
       this.panels.push(panel);
