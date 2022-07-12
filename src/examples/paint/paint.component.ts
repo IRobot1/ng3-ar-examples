@@ -5,6 +5,7 @@ import { NgtStore } from "@angular-three/core";
 
 import { TubePainter } from "./tubepainter";
 
+// based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_paint.html
 
 @Component({
   templateUrl: './paint.component.html',

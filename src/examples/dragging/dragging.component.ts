@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 
 import { Color, Euler, Object3D, Vector3 } from "three";
 
+// based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_dragging.html
 
 class RandomShape {
   constructor(public shapename: string, public color: string, public position: Vector3, public rotation: Euler, public scale: Vector3) { }

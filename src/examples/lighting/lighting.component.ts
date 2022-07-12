@@ -5,6 +5,8 @@ import { NgtStore } from "@angular-three/core";
 
 import { XREstimatedLight } from 'three-stdlib';
 
+// based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_lighting.html
+
 class BallSetting {
   constructor(public position: Vector3, public roughness: number, public metalness: number) { }
 }

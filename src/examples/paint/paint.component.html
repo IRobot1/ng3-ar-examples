@@ -1,3 +1,5 @@
+ <!--based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_paint.html--> 
+
 <ngt-hemisphere-light [args]="['white', '#bbbbff', 1]" [position]="[0, 1, 0]"></ngt-hemisphere-light>
 
 <ar-controller #ar (tapstart)="tapstart()" (tapend)="tapend()" (beforeRender)="tick(ar.controller)"></ar-controller>

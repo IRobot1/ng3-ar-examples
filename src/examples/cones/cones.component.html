@@ -1,3 +1,5 @@
+<!-- based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_cones.html -->
+
 <ngt-point-light intensity="0.75" [position]="[0, 1, 0]"></ngt-point-light>
 
 <ngt-mesh *ngFor="let item of cones" [position]="item.position" [quaternion]="item.quaternion">

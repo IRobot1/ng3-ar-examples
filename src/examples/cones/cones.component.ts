@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { Color, Object3D, Quaternion, Vector3 } from "three";
 
+// based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_cones.html
+
 class ConeSetting {
   constructor(public color: string, public position: Vector3, public quaternion: Quaternion) { }
 }

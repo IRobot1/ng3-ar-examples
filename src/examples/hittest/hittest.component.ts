@@ -5,6 +5,8 @@ import { NgtRenderState, NgtStore } from "@angular-three/core";
 
 import { WebARService } from "ng3-webxr";
 
+// based on https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_hittest.html
+
 class HitSetting {
   constructor(public position: Vector3, public rotation: Euler, public scale: Vector3, public color: string) { }
 }
