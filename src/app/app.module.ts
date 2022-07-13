@@ -34,6 +34,8 @@ import { TextVanishComponent } from '../examples/gestures/text-vanish/text-vanis
 import { HittestExample } from '../examples/hittest/hittest.component';
 import { LightingExample } from '../examples/lighting/lighting.component';
 import { PaintExample } from '../examples/paint/paint.component';
+import { NavigateDirective } from './home/navigate.directive';
+import { NavigateHomeDirective } from './home/navhome.directive';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { PaintExample } from '../examples/paint/paint.component';
     HomeComponent,
     PanelComponent,
     PortalComponent,
+    NavigateDirective,
+    NavigateHomeDirective,
 
     ConesExample,
     DraggingExample,
