@@ -2,6 +2,8 @@
 
 Use a mobile phone to open [DEMO](https://ng3ar.z9.web.core.windows.net/).  Touch **Enter AR** to start AR session.
 
+![image](https://user-images.githubusercontent.com/25032599/178856046-46eaa8b4-9706-40b3-b988-463e8ca5cd65.png)
+
 Touch a panel to navigate to each example.
 
 Withing an example, **swipe up** to return to home screen.
